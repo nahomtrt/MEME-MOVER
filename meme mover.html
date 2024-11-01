@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Mover</title>
+  <style> 
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+    #memeImage {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      transition: top 0.5s, left 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <button id="startBtn" onclick="startMoving()">Start</button>
+  <button id="stopBtn" onclick="stopMoving()" disabled>Stop</button>
+  
+  <img id="memeImage" src="download.jfif" alt="Meme Image" width="200">
+  <script src="meme-mover.js"></script>
+</body>
+</html>
